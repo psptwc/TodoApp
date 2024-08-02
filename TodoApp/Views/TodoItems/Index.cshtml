@@ -3,13 +3,8 @@
 @{
     ViewData["Title"] = "ToDo";
 }
-
-<h1>Things To Do</h1>
-
-<p>
-    <a asp-action="Create" class="btn btn-primary">Create New</a>
-</p>
-<table class="table">
+<h1 style="text-align: center; margin-bottom: 20px;">Things To Do <a asp-action="Create" class="btn btn-primary">Create New</a></h1>
+<table class="table text-center">
     <thead style="display:table-header-group;">
         <tr>
             <th>
@@ -26,7 +21,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr class="align-middle">
-            <td style="font-size: 18px;">
+            <td style="font-size: 20px;">
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
